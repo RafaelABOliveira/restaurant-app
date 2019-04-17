@@ -5,9 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './counter.component.html'
 })
 export class CounterComponent {
-  public currentCount = 0;
-
-  public incrementCounter() {
+  public currentCount = 1;
+  
+  public incrementCarne() {
     this.currentCount++;
+  }
+  public removeCarne() {
+    this.currentCount--;
   }
 }
