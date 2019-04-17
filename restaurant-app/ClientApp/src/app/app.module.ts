@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { CardapioComponent } from './cardapio/cardapio.component';
 import { PromocoesComponent } from './promocoes/promocoes.component';
 
@@ -18,7 +17,6 @@ import { PromocoesComponent } from './promocoes/promocoes.component';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent,
     CardapioComponent,
     PromocoesComponent
   ],
@@ -29,8 +27,8 @@ import { PromocoesComponent } from './promocoes/promocoes.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'cardapio', component: CardapioComponent}
+      { path: 'cardapio', component: CardapioComponent},
+      { path: 'promocoes', component: PromocoesComponent}
     ])
   ],
   providers: [],
